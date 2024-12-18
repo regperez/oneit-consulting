@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechSolutions Consulting</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+    <!-- Navegación -->
+    <nav class="bg-white shadow-md fixed w-full z-50 top-0">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="images/logo_profesional.jpg" alt="TechSolutions Logo" class="h-10 mr-4">
+                <h1 class="text-2xl font-bold text-blue-600">TechSolutions</h1>
+            </div>
+            <div class="space-x-6 hidden md:block">
+                <a href="#inicio" class="hover:text-blue-600 transition">Inicio</a>
+                <a href="#servicios" class="hover:text-blue-600 transition">Servicios</a>
+                <a href="#proyectos" class="hover:text-blue-600 transition">Proyectos</a>
+                <a href="#blog" class="hover:text-blue-600 transition">Blog</a>
+                <a href="#contacto" class="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección de Inicio -->
+    <section id="inicio" class="pt-24 pb-16 bg-gradient-to-br from-blue-50 to-white">
+        <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-8 md:mb-0 md:mr-12">
+                <h2 class="text-4xl font-bold mb-6 text-gray-900">Transformación Digital para su Empresa</h2>
+                <p class="text-xl text-gray-600 mb-8">
+                    En TechSolutions, ofrecemos consultoría tecnológica de vanguardia para impulsar la innovación y competitividad de su negocio.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="#servicios" class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition">
+                        Nuestros Servicios
+                    </a>
+                    <a href="#contacto" class="border-2 border-blue-600 text-blue-600 px-6 py-3 rounded-full hover:bg-blue-50 transition">
+                        Contáctanos
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/2">
+                <img src="/api/placeholder/500/400" alt="Tecnología e Innovación" class="rounded-lg shadow-xl">
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Servicios -->
+    <section id="servicios" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Nuestros Servicios</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-xl transition">
+                    <h3 class="text-xl font-semibold mb-4">Transformación Digital</h3>
+                    <p>Ayudamos a su empresa a adoptar tecnologías emergentes para mejorar la eficiencia y competitividad.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-xl transition">
+                    <h3 class="text-xl font-semibold mb-4">Consultoría en Cloud</h3>
+                    <p>Diseñamos estrategias de migración y optimización de infraestructura en la nube.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-xl transition">
+                    <h3 class="text-xl font-semibold mb-4">Seguridad IT</h3>
+                    <p>Implementamos soluciones integrales de ciberseguridad para proteger su información.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Proyectos -->
+    <section id="proyectos" class="py-16 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Proyectos Destacados</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="/api/placeholder/400/250" alt="Proyecto 1" class="w-full h-52 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-3">Migración Cloud para Empresa Financiera</h3>
+                        <p>Implementación de infraestructura cloud con máxima seguridad y escalabilidad.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="/api/placeholder/400/250" alt="Proyecto 2" class="w-full h-52 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-3">Transformación Digital Retail</h3>
+                        <p>Desarrollo de plataforma omnicanal para mejorar experiencia del cliente.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="/api/placeholder/400/250" alt="Proyecto 3" class="w-full h-52 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-3">Estrategia de Ciberseguridad</h3>
+                        <p>Implementación de sistemas de seguridad avanzados para empresa de salud.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Blog -->
+    <section id="blog" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Últimas Publicaciones</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 rounded-lg p-6 shadow-md">
+                    <h3 class="text-xl font-semibold mb-3">Tendencias en IA para 2024</h3>
+                    <p>Exploramos las principales tendencias en Inteligencia Artificial que transformarán los negocios.</p>
+                    <a href="#" class="text-blue-600 mt-4 inline-block hover:underline">Leer más</a>
+                </div>
+                <div class="bg-gray-50 rounded-lg p-6 shadow-md">
+                    <h3 class="text-xl font-semibold mb-3">Estrategias de Transformación Digital</h3>
+                    <p>Consejos prácticos para implementar una estrategia de transformación digital efectiva.</p>
+                    <a href="#" class="text-blue-600 mt-4 inline-block hover:underline">Leer más</a>
+                </div>
+                <div class="bg-gray-50 rounded-lg p-6 shadow-md">
+                    <h3 class="text-xl font-semibold mb-3">Seguridad en la Nube</h3>
+                    <p>Mejores prácticas para garantizar la seguridad de su infraestructura cloud.</p>
+                    <a href="#" class="text-blue-600 mt-4 inline-block hover:underline">Leer más</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto" class="py-16 bg-gradient-to-br from-blue-600 to-blue-800 text-white">
+        <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row">
+            <div class="md:w-1/2 mb-8 md:mb-0 md:mr-12">
+                <h2 class="text-3xl font-bold mb-6">Contáctanos</h2>
+                <p class="text-xl mb-8">
+                    Estamos listos para ayudarte a transformar tu negocio. Déjanos tus datos y nos pondremos en contacto.
+                </p>
+                <div class="space-y-4">
+                    <div class="flex items-center">
+                        <svg class="w-6 h-6 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.598 5.234a1 1 0 01-.632 1.601L8.41 15.182a1.735 1.735 0 00-.505.914l-.549 2.148a1.981 1.981 0 001.316 2.369c1.591.553 3.255.969 4.966 1.189a1.314 1.314 0 001.366-1.082l.271-1.824a.413.413 0 00-.317-.465l-2.535-.635a.39.39 0 01-.3-.385V14.5a.5.5 0 01.5-.5h7a.5.5 0 01.5.5v1.328c0 .21-.148.39-.355.421l-2.535.635a.39.39 0 00-.317.465l.271 1.824a1.314 1.314 0 001.366 1.082c1.711-.22 3.375-.636 4.966-1.189a1.981 1.981 0 001.316-2.369l-.549-2.148a1.735 1.735 0 00-.505-.914l-1.452-1.463a1 1 0 01-.632-1.601l1.598-5.234A1 1 0 0118.72 3H22a2 2 0 012 2v14a2 2 0 01-2 2H2a2 2 0 01-2-2V5z"></path>
+                        </svg>
+                        <span>+56 22 123 4567</span>
+                    </div>
+                    <div class="flex items-center">
+                        <svg class="w-6 h-6 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                        <span>contacto@techsolutions.cl</span>
+                    </div>
+                </div>
+            </div>
+            <div class="md:w-1/2">
+                <form class="bg-white/10 p-8 rounded-lg">
+                    <div class="mb-4">
+                        <label class="block mb-2">Nombre</label>
+                        <input type="text" class="w-full bg-white/20 p-3 rounded-lg text-white placeholder-white/70" placeholder="Su nombre">
+                    </div>
+                    <div class="mb-4">
+                        <label class="block mb-2">Correo Electrónico</label>
+                        <input type="email" class="w-full bg-white/20 p-3 rounded-lg text-white placeholder-white/70" placeholder="Su email">
+                    </div>
+                    <div class="mb-4">
+                        <label class="block mb-2">Mensaje</label>
+                        <textarea class="w-full bg-white/20 p-3 rounded-lg text-white placeholder-white/70" rows="4" placeholder="Su mensaje"></textarea>
+                    </div>
+                    <button type="submit" class="bg-white text-blue-600 px-6 py-3 rounded-full hover:bg-gray-100 transition">
+                        Enviar Mensaje
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between">
+            <div>
+                <h3 class="text-xl font-bold mb-4">TechSolutions</h3>
+                <p class="text-gray-400 max-w-md">Impulsamos la transformación digital de las empresas con soluciones tecnológicas innovadoras y personalizadas.</p>
+            </div>
+            <div class="flex space-x-6 mt-6 md:mt-0">
+                <a href="#" class="hover:text-blue-400">LinkedIn</a>
+                <a href="#" class="hover:text-blue-400">Twitter</a>
+                <a href="#" class="hover:text-blue-400">Instagram</a>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto px-4 mt-8 pt-6 border-t border-gray-800 text-center">
+            <p class="text-gray-500">© 2024 TechSolutions Consulting. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
