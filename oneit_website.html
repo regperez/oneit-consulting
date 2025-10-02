@@ -49,13 +49,13 @@
         }
 
         .logo img {
-            height: 80px;
+            height: 40px;
             width: auto;
             filter: brightness(1.1) contrast(1.1);
         }
 
         .logo-text {
-            font-size: 2.5rem;
+            font-size: 1.8rem;
             font-weight: bold;
             color: white;
             text-shadow: 0 2px 4px rgba(0,0,0,0.3);
@@ -65,7 +65,6 @@
             display: flex;
             list-style: none;
             gap: 2rem;
-            align-items: center;
         }
 
         .nav-links a {
@@ -89,7 +88,7 @@
         }
 
         main {
-            margin-top: 80px;
+            margin-top: 70px;
         }
 
         .hero {
@@ -317,13 +316,69 @@
             }
         }
 
+        /* Menú hamburguesa para móviles */
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+
         @media (max-width: 768px) {
+            header {
+                padding: 0.5rem 0;
+            }
+
+            .logo img {
+                height: 40px;
+            }
+
+            .logo-text {
+                font-size: 1rem;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
             .nav-links {
-                display: none;
+                position: fixed;
+                top: 60px;
+                left: -100%;
+                width: 100%;
+                background: rgba(0, 0, 0, 0.95);
+                flex-direction: column;
+                gap: 0;
+                padding: 1rem 0;
+                transition: left 0.3s ease;
+                z-index: 999;
+            }
+
+            .nav-links.active {
+                left: 0;
+            }
+
+            .nav-links li {
+                width: 100%;
+                text-align: center;
+                padding: 1rem 0;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            }
+
+            .nav-links a {
+                display: block;
+                width: 100%;
             }
             
             .hero h1 {
-                font-size: 2.5rem;
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
             }
             
             .about-content {
@@ -332,6 +387,10 @@
             
             .cloud-logos {
                 gap: 1rem;
+            }
+
+            .section h2 {
+                font-size: 1.8rem;
             }
         }
     </style>
@@ -343,7 +402,8 @@
                 <img src="img/oneit-logo.png" alt="ONE IT Consulting Logo">
                 <span class="logo-text">ONE IT Consulting</span>
             </div>
-            <ul class="nav-links">
+            <button class="menu-toggle" id="menuToggle">☰</button>
+            <ul class="nav-links" id="navLinks">
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#servicios">Servicios</a></li>
                 <li><a href="#nosotros">Nosotros</a></li>
@@ -356,7 +416,7 @@
         <section id="inicio" class="hero">
             <div class="container">
                 <h1>ONE IT Consulting</h1>
-                <p>Consultoría y Soporte Tecnológico Especializado en Panamá</p>
+                <p>Consultoría y Soporte Tecnológico Especializado</p>
                 <p>Infraestructura • GNU/Linux • Bases de Datos • Nube</p>
                 <a href="#contacto" class="cta-button">Solicitar Consulta Gratuita</a>
             </div>
@@ -475,6 +535,21 @@
     </footer>
 
     <script>
+        // Menú hamburguesa para móviles
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+
+        menuToggle.addEventListener('click', function() {
+            navLinks.classList.toggle('active');
+        });
+
+        // Cerrar menú al hacer clic en un enlace
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', function() {
+                navLinks.classList.remove('active');
+            });
+        });
+
         // Smooth scrolling para enlaces de navegación
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
